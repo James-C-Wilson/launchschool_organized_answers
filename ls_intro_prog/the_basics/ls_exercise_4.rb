@@ -1,0 +1,12 @@
+dates = [2019, 2019, 2019, 1979, 1991, 1985, 1985, 2002, 2019, 2015]
+
+puts dates [0]
+puts dates [1]
+puts dates [2]
+puts dates [3]
+puts dates [4]
+puts dates [5]
+puts dates [6]
+puts dates [7]
+puts dates [8]
+puts dates [9]
