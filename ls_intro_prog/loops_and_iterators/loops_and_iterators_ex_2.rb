@@ -2,6 +2,7 @@
 # and only stops when the user types "STOP". Each loop can get info from 
 # the user.
 
+=begin
 START
 PRINT
   - Greeting to user "Hello.  Welcome to the loop program. Please enter something to loop."
@@ -28,4 +29,40 @@ while x != "STOP" do
   puts "Would you like me to see how you are feeling again?"
   answer = gets.chomp
 end
+
+=end
+
+
+# WHILE LOOP
+
+x = ""
+while x != 'no'.downcase do
+  puts "Yo.  Do you like cats?"
+  x = gets.chomp
+  puts "Are you sure you don't like cats?"
+  answer = gets.chomp
+end
+
+x = ""
+while x != 'no'.downcase do
+  puts "Hey!  Are you cool?"
+  x = gets.chomp
+  puts "Are you sure you're not cool?"
+  answer = gets.chomp
+end
+
+
+x = ""
+while x != 'password'.downcase do
+  puts "Hey! What's the password?"
+  x = gets.chomp
+  puts "You're not authorized for use of this device! Enter the password."
+  answer = gets.chomp
+end
+
+
+
+
+
+
 
