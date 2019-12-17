@@ -74,3 +74,36 @@ def fun_with_ids
   puts "c_inner is #{c_inner} with an id of: #{c_inner_id} INSIDE and: #{c_inner.object_id} AFTER the block." rescue puts "ugh ohhhhh"
   puts "d_inner is #{d_inner} with an id of: #{d_inner_id} INSIDE and: #{d_inner.object_id} AFTER the block." rescue puts "ugh ohhhhh"
 end
+
+
+# Question 2 **
+
+# Review
+
+
+# Question 3 Review **
+
+# Study the code and and state what will be displayed:
+
+# the method is defined and assigned the paramaters a_string_param, and an_array_param
+def tricky_method(a_string_param, an_array_param)
+  # the a_string_param variable is initialized and assigned the value a_string_param = a_string_param + "rutabaga"
+  a_string_param += "rutabaga"
+  #   # the an_array_param variable is initialized and assigned the value a_string_param << + "rutabaga". the shovel operator
+  # is used so this is an_array_param << "rutabanga". this puts the string into the string param using the shovel operator <<
+  an_array_param << "rutabaga"
+end
+
+my_string = "pumpkins"
+my_array = ["pumpkins"]
+tricky_method(my_string, my_array)
+
+puts "My string looks like this now: #{my_string}"
+puts "My array looks like this now: #{my_array}"
+
+# Question 4 **
+
+# Question 5 **
+
+
+# Question 6
