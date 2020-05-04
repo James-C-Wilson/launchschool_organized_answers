@@ -1,82 +1,54 @@
 =begin
- 
-P - Write a method that takes one integer argument, which may be positive, negative, or zero. This method 
-returns true if the number's absolute value is odd. You may assume that the argument is a valid integer 
-value.
 
+P
 
--- input: one integer argument
-  - integer is either positive, negative, or zero
+Write a method that takes one integer argument, which may be positive, negative, or zero. This method returns 
+true if the number's absolute value is odd. You may assume that the argument is a valid integer value.
 
+E
 
--- output: returns true if the number is odd
-
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-
-Examples / Test Cases / Edge Cases:
-
-input: puts is_odd?(2)
-output: false
-
-input: puts is_odd?(5) 
-output: false
-
-input: puts is_odd?(-17) 
-output: true
-
-input: puts is_odd?(-8) 
-output: false
-
-input: puts is_odd?(0) 
-output: false
-
-input: puts is_odd?(7) 
-output: true
-
- 
- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ __ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-
-Data Structure:
-
--- may use a modulo % 
-
--- could use ==
-
-My mental model is the following:  Create a method that determines if a number is odd.
-
-
-# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-
-Algorithm:
-
-- Create a method that takes one argument that is an integer
-
-    - determine if the argument is odd
-        - return true if the argument is odd
-        - return false if the argument is even
+puts is_odd?(2)    # => false
+puts is_odd?(5)    # => true
+puts is_odd?(-17)  # => true
+puts is_odd?(-8)   # => false
+puts is_odd?(0)    # => false
+puts is_odd?(7)    # => true
 
 
 
-  
+D Integer 
+
+
+
+A 
+
+Write a method that takes an integer argument
+		can be positive, negative, or zero
+
+		method returns true if number == odd?
+
+
+
 =end
 
-# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-# C  
+# C
 
 def is_odd?(number)
-  number.odd?
+	if number.odd? then true
+	else
+		false
+	end
 end
 
-# This seems to work out correctly.  However, I think I may need to see if I can also solve this
-# puzzle without using the odd? method.  Perhaps I can make my own?
-
-def is_odd(number)
-  if number % 2 != 0
-    then true
-    else false
-  end
+def is_odd?(number)
+	number % 2 == 1
 end
-is_odd(3)
 
-# I think this is acceptable.
+
+puts is_odd?(2)    # => false
+puts is_odd?(5)    # => true
+puts is_odd?(-17)  # => true
+puts is_odd?(-8)   # => false
+puts is_odd?(0)    # => false
+puts is_odd?(7)    # => true
